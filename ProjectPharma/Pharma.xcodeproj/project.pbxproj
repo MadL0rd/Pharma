@@ -126,6 +126,27 @@
 		895FFBF8267DAB0A00256AF7 /* BarcodeMedsScanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFBF0267DAB0900256AF7 /* BarcodeMedsScanerView.swift */; };
 		895FFBF9267DAB0A00256AF7 /* BarcodeMedsScanerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFBF1267DAB0900256AF7 /* BarcodeMedsScanerInput.swift */; };
 		895FFBFB267DC19400256AF7 /* UITableViewCell+setDisclosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFBFA267DC19400256AF7 /* UITableViewCell+setDisclosure.swift */; };
+		895FFC08267E241700256AF7 /* PharmaNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFBFF267E241700256AF7 /* PharmaNetworkService.swift */; };
+		895FFC09267E241700256AF7 /* PharmaNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC00267E241700256AF7 /* PharmaNetworkServiceProtocol.swift */; };
+		895FFC0A267E241700256AF7 /* PharmaCompletionTypealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC02267E241700256AF7 /* PharmaCompletionTypealiases.swift */; };
+		895FFC0B267E241700256AF7 /* PharmaErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC03267E241700256AF7 /* PharmaErrors.swift */; };
+		895FFC0C267E241700256AF7 /* PharmaRequestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC04267E241700256AF7 /* PharmaRequestResults.swift */; };
+		895FFC0D267E241700256AF7 /* PharmaRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC06267E241700256AF7 /* PharmaRequestBuilder.swift */; };
+		895FFC0E267E241700256AF7 /* PharmaRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC07267E241700256AF7 /* PharmaRoutes.swift */; };
+		895FFC10267E26BB00256AF7 /* Supplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC0F267E26BB00256AF7 /* Supplement.swift */; };
+		895FFC12267E271E00256AF7 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC11267E271E00256AF7 /* Article.swift */; };
+		895FFC14267E277800256AF7 /* SupplementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC13267E277800256AF7 /* SupplementComponent.swift */; };
+		895FFC17267E383900256AF7 /* SupplementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC16267E383900256AF7 /* SupplementsManager.swift */; };
+		895FFC19267E384100256AF7 /* SupplementsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC18267E384100256AF7 /* SupplementsManagerProtocol.swift */; };
+		895FFC1B267E387F00256AF7 /* AidKitSupplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC1A267E387F00256AF7 /* AidKitSupplement.swift */; };
+		895FFC2A267E3CB800256AF7 /* SupplementEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC20267E3CB800256AF7 /* SupplementEditorViewModel.swift */; };
+		895FFC2B267E3CB800256AF7 /* SupplementEditorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC21267E3CB800256AF7 /* SupplementEditorViewModelProtocol.swift */; };
+		895FFC2C267E3CB800256AF7 /* SupplementEditorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC22267E3CB800256AF7 /* SupplementEditorInput.swift */; };
+		895FFC2D267E3CB800256AF7 /* SupplementEditorCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC24267E3CB800256AF7 /* SupplementEditorCoordinatorProtocol.swift */; };
+		895FFC2E267E3CB800256AF7 /* SupplementEditorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC25267E3CB800256AF7 /* SupplementEditorCoordinator.swift */; };
+		895FFC2F267E3CB800256AF7 /* SupplementEditorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC26267E3CB800256AF7 /* SupplementEditorOutput.swift */; };
+		895FFC30267E3CB800256AF7 /* SupplementEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC28267E3CB800256AF7 /* SupplementEditorView.swift */; };
+		895FFC31267E3CB800256AF7 /* SupplementEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC29267E3CB800256AF7 /* SupplementEditorViewController.swift */; };
 		8965F11F2675C59000454B69 /* Array+isNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */; };
 		897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FC3D8261690DC002352E7 /* UIViewController+alert.swift */; };
 		8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */; };
@@ -286,6 +307,27 @@
 		895FFBF0267DAB0900256AF7 /* BarcodeMedsScanerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerView.swift; sourceTree = "<group>"; };
 		895FFBF1267DAB0900256AF7 /* BarcodeMedsScanerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerInput.swift; sourceTree = "<group>"; };
 		895FFBFA267DC19400256AF7 /* UITableViewCell+setDisclosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+setDisclosure.swift"; sourceTree = "<group>"; };
+		895FFBFF267E241700256AF7 /* PharmaNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmaNetworkService.swift; sourceTree = "<group>"; };
+		895FFC00267E241700256AF7 /* PharmaNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmaNetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		895FFC02267E241700256AF7 /* PharmaCompletionTypealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmaCompletionTypealiases.swift; sourceTree = "<group>"; };
+		895FFC03267E241700256AF7 /* PharmaErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmaErrors.swift; sourceTree = "<group>"; };
+		895FFC04267E241700256AF7 /* PharmaRequestResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmaRequestResults.swift; sourceTree = "<group>"; };
+		895FFC06267E241700256AF7 /* PharmaRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmaRequestBuilder.swift; sourceTree = "<group>"; };
+		895FFC07267E241700256AF7 /* PharmaRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PharmaRoutes.swift; sourceTree = "<group>"; };
+		895FFC0F267E26BB00256AF7 /* Supplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplement.swift; sourceTree = "<group>"; };
+		895FFC11267E271E00256AF7 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		895FFC13267E277800256AF7 /* SupplementComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementComponent.swift; sourceTree = "<group>"; };
+		895FFC16267E383900256AF7 /* SupplementsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementsManager.swift; sourceTree = "<group>"; };
+		895FFC18267E384100256AF7 /* SupplementsManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementsManagerProtocol.swift; sourceTree = "<group>"; };
+		895FFC1A267E387F00256AF7 /* AidKitSupplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AidKitSupplement.swift; sourceTree = "<group>"; };
+		895FFC20267E3CB800256AF7 /* SupplementEditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorViewModel.swift; sourceTree = "<group>"; };
+		895FFC21267E3CB800256AF7 /* SupplementEditorViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorViewModelProtocol.swift; sourceTree = "<group>"; };
+		895FFC22267E3CB800256AF7 /* SupplementEditorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorInput.swift; sourceTree = "<group>"; };
+		895FFC24267E3CB800256AF7 /* SupplementEditorCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		895FFC25267E3CB800256AF7 /* SupplementEditorCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorCoordinator.swift; sourceTree = "<group>"; };
+		895FFC26267E3CB800256AF7 /* SupplementEditorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorOutput.swift; sourceTree = "<group>"; };
+		895FFC28267E3CB800256AF7 /* SupplementEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorView.swift; sourceTree = "<group>"; };
+		895FFC29267E3CB800256AF7 /* SupplementEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorViewController.swift; sourceTree = "<group>"; };
 		8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+isNotEmpty.swift"; sourceTree = "<group>"; };
 		897FC3D8261690DC002352E7 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationViewController.swift; sourceTree = "<group>"; };
@@ -634,8 +676,8 @@
 		895FFB6C267DAAB900256AF7 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				895FFB6D267DAAB900256AF7 /* MainMenuCoordinator.swift */,
 				895FFB6E267DAAB900256AF7 /* MainMenuCoordinatorProtocol.swift */,
+				895FFB6D267DAAB900256AF7 /* MainMenuCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -851,8 +893,8 @@
 			children = (
 				895FFBF1267DAB0900256AF7 /* BarcodeMedsScanerInput.swift */,
 				895FFBED267DAB0900256AF7 /* BarcodeMedsScanerOutput.swift */,
-				895FFBE7267DAB0900256AF7 /* ViewModel */,
 				895FFBEA267DAB0900256AF7 /* Coordinator */,
+				895FFBE7267DAB0900256AF7 /* ViewModel */,
 				895FFBEE267DAB0900256AF7 /* View */,
 			);
 			path = BarcodeMedsScaner;
@@ -885,6 +927,84 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		895FFBFE267E241700256AF7 /* PharmaNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC05267E241700256AF7 /* RequestBuilder */,
+				895FFC01267E241700256AF7 /* Entities */,
+				895FFC00267E241700256AF7 /* PharmaNetworkServiceProtocol.swift */,
+				895FFBFF267E241700256AF7 /* PharmaNetworkService.swift */,
+			);
+			path = PharmaNetworkService;
+			sourceTree = "<group>";
+		};
+		895FFC01267E241700256AF7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC02267E241700256AF7 /* PharmaCompletionTypealiases.swift */,
+				895FFC03267E241700256AF7 /* PharmaErrors.swift */,
+				895FFC04267E241700256AF7 /* PharmaRequestResults.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		895FFC05267E241700256AF7 /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC06267E241700256AF7 /* PharmaRequestBuilder.swift */,
+				895FFC07267E241700256AF7 /* PharmaRoutes.swift */,
+			);
+			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		895FFC15267E381700256AF7 /* SupplementsManager */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC18267E384100256AF7 /* SupplementsManagerProtocol.swift */,
+				895FFC16267E383900256AF7 /* SupplementsManager.swift */,
+			);
+			path = SupplementsManager;
+			sourceTree = "<group>";
+		};
+		895FFC1E267E3CB800256AF7 /* SupplementEditor */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC22267E3CB800256AF7 /* SupplementEditorInput.swift */,
+				895FFC26267E3CB800256AF7 /* SupplementEditorOutput.swift */,
+				895FFC23267E3CB800256AF7 /* Coordinator */,
+				895FFC1F267E3CB800256AF7 /* ViewModel */,
+				895FFC27267E3CB800256AF7 /* View */,
+			);
+			path = SupplementEditor;
+			sourceTree = "<group>";
+		};
+		895FFC1F267E3CB800256AF7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC21267E3CB800256AF7 /* SupplementEditorViewModelProtocol.swift */,
+				895FFC20267E3CB800256AF7 /* SupplementEditorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		895FFC23267E3CB800256AF7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC24267E3CB800256AF7 /* SupplementEditorCoordinatorProtocol.swift */,
+				895FFC25267E3CB800256AF7 /* SupplementEditorCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		895FFC27267E3CB800256AF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC29267E3CB800256AF7 /* SupplementEditorViewController.swift */,
+				895FFC28267E3CB800256AF7 /* SupplementEditorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8981FD7E2656EBE400993B65 /* AlertPresentationViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -907,6 +1027,8 @@
 		89F00A3A2542E16200D482F6 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				895FFC15267E381700256AF7 /* SupplementsManager */,
+				895FFBFE267E241700256AF7 /* PharmaNetworkService */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -958,6 +1080,10 @@
 		89F00A542542E16200D482F6 /* ModelsLayer */ = {
 			isa = PBXGroup;
 			children = (
+				895FFC1A267E387F00256AF7 /* AidKitSupplement.swift */,
+				895FFC0F267E26BB00256AF7 /* Supplement.swift */,
+				895FFC11267E271E00256AF7 /* Article.swift */,
+				895FFC13267E277800256AF7 /* SupplementComponent.swift */,
 			);
 			path = ModelsLayer;
 			sourceTree = "<group>";
@@ -983,6 +1109,7 @@
 				895FFB76267DAAB900256AF7 /* UserHealth */,
 				895FFB8E267DAAB900256AF7 /* Settings */,
 				895FFB82267DAAB900256AF7 /* AboutUs */,
+				895FFC1E267E3CB800256AF7 /* SupplementEditor */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -1234,13 +1361,18 @@
 			files = (
 				894064EF2612308800DC682F /* AnnouncementViewController.swift in Sources */,
 				895FFBD4267DAABA00256AF7 /* SettingsOutput.swift in Sources */,
+				895FFC30267E3CB800256AF7 /* SupplementEditorView.swift in Sources */,
+				895FFC0E267E241700256AF7 /* PharmaRoutes.swift in Sources */,
 				894064E02612308800DC682F /* UIViewController+addChildViewControllerToView.swift in Sources */,
+				895FFC14267E277800256AF7 /* SupplementComponent.swift in Sources */,
 				895FFBC9267DAABA00256AF7 /* AboutUsOutput.swift in Sources */,
 				895FFBBF267DAABA00256AF7 /* UserHealthCoordinator.swift in Sources */,
+				895FFC2C267E3CB800256AF7 /* SupplementEditorInput.swift in Sources */,
 				895FFBDC267DAABA00256AF7 /* AidKitTrackerView.swift in Sources */,
 				895FFBE1267DAABA00256AF7 /* ShopSearchCoordinator.swift in Sources */,
 				899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */,
 				894064F12612308800DC682F /* SegmentedControl.swift in Sources */,
+				895FFC08267E241700256AF7 /* PharmaNetworkService.swift in Sources */,
 				8940652A2612327C00DC682F /* LoadingViewModel.swift in Sources */,
 				894064F32612308800DC682F /* ArrowDownButton.swift in Sources */,
 				894064DA2612308800DC682F /* PickerViewManager.swift in Sources */,
@@ -1255,6 +1387,7 @@
 				89F00AB22542E16200D482F6 /* ApplicationAssembly.swift in Sources */,
 				895FFBDD267DAABA00256AF7 /* AidKitTrackerOutput.swift in Sources */,
 				895FFB61267DA08F00256AF7 /* UI+resources.swift in Sources */,
+				895FFC2B267E3CB800256AF7 /* SupplementEditorViewModelProtocol.swift in Sources */,
 				894064E32612308800DC682F /* UIImage+overlayedColor.swift in Sources */,
 				8940652B2612327C00DC682F /* LoadingOutput.swift in Sources */,
 				89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */,
@@ -1264,6 +1397,7 @@
 				895FFBD9267DAABA00256AF7 /* AidKitTrackerCoordinator.swift in Sources */,
 				894064DB2612308800DC682F /* UIView+TapAnimation.swift in Sources */,
 				89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */,
+				895FFC0B267E241700256AF7 /* PharmaErrors.swift in Sources */,
 				892B1FA2261D2EA200329B0A /* Bundle+info.swift in Sources */,
 				895FFBC1267DAABA00256AF7 /* UserHealthOutput.swift in Sources */,
 				895FFBC6267DAABA00256AF7 /* AboutUsViewModel.swift in Sources */,
@@ -1271,13 +1405,17 @@
 				894064F22612308800DC682F /* ScrollMovingUpManagerForUIControl.swift in Sources */,
 				8965F11F2675C59000454B69 /* Array+isNotEmpty.swift in Sources */,
 				895FFBC5267DAABA00256AF7 /* AboutUsViewModelProtocol.swift in Sources */,
+				895FFC2A267E3CB800256AF7 /* SupplementEditorViewModel.swift in Sources */,
 				894064D82612308800DC682F /* AlertManager.swift in Sources */,
 				8940645126122B7600DC682F /* CustomPatchEncoding.swift in Sources */,
 				895FFBF8267DAB0A00256AF7 /* BarcodeMedsScanerView.swift in Sources */,
+				895FFC17267E383900256AF7 /* SupplementsManager.swift in Sources */,
 				895FFBC7267DAABA00256AF7 /* AboutUsCoordinator.swift in Sources */,
+				895FFC09267E241700256AF7 /* PharmaNetworkServiceProtocol.swift in Sources */,
 				894064DF2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift in Sources */,
 				895FFBF6267DAB0900256AF7 /* BarcodeMedsScanerOutput.swift in Sources */,
 				897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */,
+				895FFC10267E26BB00256AF7 /* Supplement.swift in Sources */,
 				894064EE2612308800DC682F /* PaddingLabel.swift in Sources */,
 				8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */,
 				8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */,
@@ -1304,6 +1442,7 @@
 				894064ED2612308800DC682F /* LimitatableTextView.swift in Sources */,
 				895FFBDA267DAABA00256AF7 /* AidKitTrackerCoordinatorProtocol.swift in Sources */,
 				895FFBCC267DAABA00256AF7 /* AboutUsViewController.swift in Sources */,
+				895FFC2E267E3CB800256AF7 /* SupplementEditorCoordinator.swift in Sources */,
 				894064D92612308800DC682F /* ColorPickerView.swift in Sources */,
 				8940645226122B7600DC682F /* CustomArrayEncoding.swift in Sources */,
 				895FFBFB267DC19400256AF7 /* UITableViewCell+setDisclosure.swift in Sources */,
@@ -1311,20 +1450,26 @@
 				894064DC2612308800DC682F /* UIView+layerAnimation.swift in Sources */,
 				894064E52612308800DC682F /* UIView+shake.swift in Sources */,
 				8940645426122B7600DC682F /* NetworkService.swift in Sources */,
+				895FFC19267E384100256AF7 /* SupplementsManagerProtocol.swift in Sources */,
 				8940645326122B7600DC682F /* DataParser.swift in Sources */,
 				894064E62612308800DC682F /* UIColor+rgba.swift in Sources */,
 				895FFBDB267DAABA00256AF7 /* AidKitTrackerViewController.swift in Sources */,
 				894065302612327C00DC682F /* LoadingInput.swift in Sources */,
+				895FFC2D267E3CB800256AF7 /* SupplementEditorCoordinatorProtocol.swift in Sources */,
 				895FFBE2267DAABA00256AF7 /* ShopSearchOutput.swift in Sources */,
+				895FFC1B267E387F00256AF7 /* AidKitSupplement.swift in Sources */,
 				894064EB2612308800DC682F /* UIViewController+ModuleTransitionHandler.swift in Sources */,
 				894064DD2612308800DC682F /* UIView+RoundedCorners.swift in Sources */,
+				895FFC0C267E241700256AF7 /* PharmaRequestResults.swift in Sources */,
 				895FFBE4267DAABA00256AF7 /* ShopSearchViewController.swift in Sources */,
 				895FFBD3267DAABA00256AF7 /* SettingsViewController.swift in Sources */,
 				895FFBF4267DAB0900256AF7 /* BarcodeMedsScanerCoordinator.swift in Sources */,
 				894064E42612308800DC682F /* UIImage+merge.swift in Sources */,
+				895FFC0D267E241700256AF7 /* PharmaRequestBuilder.swift in Sources */,
 				894064F02612308800DC682F /* LabelsSegmentedControl.swift in Sources */,
 				895FFBF2267DAB0900256AF7 /* BarcodeMedsScanerViewModelProtocol.swift in Sources */,
 				895FFBBB267DAABA00256AF7 /* CustomTabBar.swift in Sources */,
+				895FFC31267E3CB800256AF7 /* SupplementEditorViewController.swift in Sources */,
 				894064F62612308800DC682F /* ButtonWithTouchSize.swift in Sources */,
 				895FFBD7267DAABA00256AF7 /* AidKitTrackerViewModelProtocol.swift in Sources */,
 				895FFBC8267DAABA00256AF7 /* AboutUsCoordinatorProtocol.swift in Sources */,
@@ -1333,6 +1478,7 @@
 				895FFBC0267DAABA00256AF7 /* UserHealthCoordinatorProtocol.swift in Sources */,
 				894065292612327C00DC682F /* LoadingViewModelProtocol.swift in Sources */,
 				894064F42612308800DC682F /* ContentFittingTableView.swift in Sources */,
+				895FFC0A267E241700256AF7 /* PharmaCompletionTypealiases.swift in Sources */,
 				894064DE2612308800DC682F /* UIViewController+Keyboard.swift in Sources */,
 				895FFBC4267DAABA00256AF7 /* UserHealthView.swift in Sources */,
 				895FFBD6267DAABA00256AF7 /* AidKitTrackerViewModel.swift in Sources */,
@@ -1340,8 +1486,10 @@
 				895FFBB6267DAABA00256AF7 /* MainMenuCoordinatorProtocol.swift in Sources */,
 				894064E92612308800DC682F /* UIStyleManager.swift in Sources */,
 				8940652E2612327C00DC682F /* LoadingView.swift in Sources */,
+				895FFC12267E271E00256AF7 /* Article.swift in Sources */,
 				895FFBCA267DAABA00256AF7 /* AboutUsInput.swift in Sources */,
 				895FFBF3267DAB0900256AF7 /* BarcodeMedsScanerViewModel.swift in Sources */,
+				895FFC2F267E3CB800256AF7 /* SupplementEditorOutput.swift in Sources */,
 				895FFBC2267DAABA00256AF7 /* UserHealthInput.swift in Sources */,
 				895FFBCF267DAABA00256AF7 /* SettingsCoordinatorProtocol.swift in Sources */,
 				895FFBCB267DAABA00256AF7 /* AboutUsView.swift in Sources */,

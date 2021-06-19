@@ -18,6 +18,7 @@ enum UserStoriesModulesDefault: ModuleGenerator {
     case userHealth
     case aidKitTracker
     case mainMenu
+    case supplementEditor
 
     func createModule() -> UIViewController {
         switch self {
@@ -37,6 +38,8 @@ enum UserStoriesModulesDefault: ModuleGenerator {
             return AidKitTrackerCoordinator.createModule()
         case .mainMenu: 
             return MainMenuCoordinator.createModule()
+        case .supplementEditor: 
+            return SupplementEditorCoordinator.createModule()
         }
     }
 }
@@ -51,6 +54,7 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
     case userHealth(output: UserHealthOutput)
     case aidKitTracker(output: AidKitTrackerOutput)
     case mainMenu(output: MainMenuOutput)
+    case supplementEditor(output: SupplementEditorOutput)
 
     func createModule() -> UIViewController {
         switch self {
@@ -91,6 +95,11 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
             
         case .mainMenu(let output): 
             return MainMenuCoordinator.createModule { viewModel in 
+                viewModel.output = output
+            }
+            
+        case .supplementEditor(let output): 
+            return SupplementEditorCoordinator.createModule { viewModel in 
                 viewModel.output = output
             }
             

@@ -84,7 +84,9 @@ final class MainMenuViewController: UITabBarController, TabBarModuleTransitionHa
     @objc private func addButtonDidTapped(sender: UIButton) {
         sender.tapAnimation()
         DispatchQueue.main.async { [ weak self ] in
-            self?.coordinator.openModule(.barcodeMedsScaner)
+            guard let self = self
+            else { return }
+            self.coordinator.openModuleWithOutput(.barcodeMedsScaner(output: self))
         }
     }
 }
@@ -95,5 +97,14 @@ extension MainMenuViewController: CustomTabBarSelectionDelegate {
     
     func selectionDidChange(oldSelectedIndex: Int, newSelectedIndex: Int) {
         selectedIndex = newSelectedIndex
+    }
+}
+
+// MARK: - CustomTabBarSelectionDelegate
+
+extension MainMenuViewController: BarcodeMedsScanerOutput {
+    
+    func returnSupplement(_ supplement: AidKitSupplement) {
+        coordinator.openSupplementEditor(supplement: supplement)
     }
 }

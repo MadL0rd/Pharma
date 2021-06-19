@@ -9,5 +9,5 @@ protocol BarcodeMedsScanerViewModelProtocol: AnyObject {
     
     var output: BarcodeMedsScanerOutput? { get }
     
-//    func findMeds(barcode: String, completion: @escaping FindMedsCompletion)
+    func findSupplement(barcode: String, completion: @escaping(Supplement?) -> Void)
 }

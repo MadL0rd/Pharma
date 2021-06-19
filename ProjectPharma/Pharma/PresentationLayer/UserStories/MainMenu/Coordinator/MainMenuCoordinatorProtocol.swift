@@ -13,4 +13,5 @@ protocol MainMenuCoordinatorProtocol: DefaultCoordinatorProtocol {
     func generateAidKitModule() -> UIViewController
     func generateUserHealthModule() -> UIViewController
     func generateSettingsModule() -> UIViewController
+    func openSupplementEditor(supplement: AidKitSupplement)
 }

@@ -32,6 +32,9 @@
 // AidKit
 "aidKitTitle" = "Моя аптечка";
 
+// Barcode scaner
+"barcodeScanerSupplementNotFound" = "Supplement not found";
+
 // User Health
 "userHealthTitle" = "Здоровье";
 

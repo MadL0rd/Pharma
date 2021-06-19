@@ -8,7 +8,7 @@
 final class BarcodeMedsScanerViewModel {
 	var output: BarcodeMedsScanerOutput?
     
-//    var networkService: MedsInfoNetworkServiceProtocol!
+    var networkService: PharmaNetworkServiceProtocol!
 }
 
 // MARK: - Configuration
@@ -19,8 +19,19 @@ extension BarcodeMedsScanerViewModel: CustomizableBarcodeMedsScanerViewModel {
 // MARK: - Interface for view
 extension BarcodeMedsScanerViewModel: BarcodeMedsScanerViewModelProtocol {
 
-//    func findMeds(barcode: String, completion: @escaping FindMedsCompletion) {
-//        networkService.findMedsByBarcode(barcode: barcode, completion: completion)
-//    }
+    func findSupplement(barcode: String, completion: @escaping(Supplement?) -> Void) {
+        networkService.searchSupplementByBarcode(code: barcode) { result in
+            switch result {
+            case .success(let data):
+                completion(data.results.first)
+                
+            case .failure(let error):
+                print(error)
+                completion(nil)
+            }
+            
+        }
+    }
+
 }
 

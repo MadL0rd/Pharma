@@ -42,7 +42,7 @@ final class AidKitTrackerView: UIView {
         NSLayoutConstraint.activate([
             title.centerYAnchor.constraint(equalTo: topAnchor, constant: UIConstants.navigationBarCenterY),
             title.widthAnchor.constraint(equalTo: widthAnchor, constant: -60),
-            title.centerXAnchor.constraint(equalTo: centerXAnchor),
+            title.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     }
 }

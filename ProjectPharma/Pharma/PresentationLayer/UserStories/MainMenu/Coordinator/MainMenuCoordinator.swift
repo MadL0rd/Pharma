@@ -49,4 +49,12 @@ extension MainMenuCoordinator: MainMenuCoordinatorProtocol {
         let vc = SettingsCoordinator.createModule()
         return vc
     }
+    
+    func openSupplementEditor(supplement: AidKitSupplement) {
+        let vc = SupplementEditorCoordinator.createModule { viewModel in
+            viewModel.supplement = supplement
+        }
+        transition.showInRootNavigationController(vc)
+    }
+
 }

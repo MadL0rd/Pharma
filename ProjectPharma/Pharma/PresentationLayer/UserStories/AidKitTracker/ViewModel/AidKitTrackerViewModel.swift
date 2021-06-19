@@ -6,7 +6,9 @@
 //
 
 final class AidKitTrackerViewModel {
+    
 	var output: AidKitTrackerOutput?
+    
 }
 
 // MARK: - Configuration

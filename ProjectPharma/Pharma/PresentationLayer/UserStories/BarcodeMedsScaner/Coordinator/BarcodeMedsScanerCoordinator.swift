@@ -19,6 +19,8 @@ final class BarcodeMedsScanerCoordinator: DefaultCoordinator {
 
         coordinator.transition = view
         
+        viewModel.networkService = PharmaNetworkService.shared
+        
         if let configuration = configuration {
             configuration(viewModel)
         }
