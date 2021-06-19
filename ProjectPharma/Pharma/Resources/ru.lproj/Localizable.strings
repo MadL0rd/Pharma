@@ -25,3 +25,24 @@
 
 // Other
 "announcementText" = "Будет добавлено в следующих версиях";
+
+// Shop
+"shopTitle" = "Магазин";
+
+// AidKit
+"aidKitTitle" = "Моя аптечка";
+
+// User Health
+"userHealthTitle" = "Здоровье";
+
+// Settings
+"settingsTitle" = "Настройки";
+"settingsSupport" = "Поддержка";
+"settingsRateApp" = "Оценить приложение";
+"settingsAboutUs" = "О нас";
+"settingsUserAgreement" = "Пользовательское соглашение";
+"settingsPrivacyPolicy" = "Политика конфиденциальности";
+"settingsVersion" = "Версия";
+
+// About us
+"aboutUsTitle" = "О нас";

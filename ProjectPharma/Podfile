@@ -10,6 +10,8 @@ target 'Pharma' do
   pod 'JGProgressHUD'
   pod 'SDWebImage'
   pod 'Alamofire'
+  
+  pod 'BarcodeScanner'
 
 #  Exclude DEPLOYMENT_TARGET warnings
   post_install do |installer|
