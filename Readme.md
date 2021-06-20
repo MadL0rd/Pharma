@@ -70,5 +70,5 @@ Pharma is licensed under the terms of the [Apache License, version 2.0](http://w
 
 
 ## РАЗРАБОТЧИКИ
-Антон Текутов fullstack https://t.me/MadL0rd
+Антон Текутов https://t.me/MadL0rd
 
