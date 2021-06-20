@@ -165,6 +165,9 @@
 		89835C7C267EC69B00397244 /* ComponentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C74267EC69B00397244 /* ComponentInfoViewController.swift */; };
 		89835C7E267EC74900397244 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C7D267EC74900397244 /* ArticleTableViewCell.swift */; };
 		899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AAFDA2656AC460066CA10 /* VibroGenerator.swift */; };
+		89AA42E4267EDB7100EF0ACE /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA42E3267EDB7100EF0ACE /* ProfileDataStore.swift */; };
+		89AA42E6267EDE4400EF0ACE /* UserHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA42E5267EDE4400EF0ACE /* UserHealthTableViewCell.swift */; };
+		89AA42E9267EE19B00EF0ACE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AA42E8267EE19B00EF0ACE /* HealthKit.framework */; };
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
 		89DD277325DCFB2C00AD2868 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277125DCFB2C00AD2868 /* Colors.xcassets */; };
@@ -176,6 +179,9 @@
 		89F00AB22542E16200D482F6 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A502542E16200D482F6 /* ApplicationAssembly.swift */; };
 		89F00AB32542E16200D482F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A522542E16200D482F6 /* AppDelegate.swift */; };
 		89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A532542E16200D482F6 /* SceneDelegate.swift */; };
+		89FC8C90267ED5E8001DD5A3 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FC8C8F267ED5E8001DD5A3 /* HealthKitManager.swift */; };
+		89FC8C92267ED5F0001DD5A3 /* HealthKitManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FC8C91267ED5EF001DD5A3 /* HealthKitManagerProtocol.swift */; };
+		89FC8C96267ED736001DD5A3 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FC8C95267ED736001DD5A3 /* UserHealthProfile.swift */; };
 		C36D8F4FA77B8D006AE5566C /* PharmaUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD759F9CD9B9E514B4B37AE /* PharmaUnitTest.swift */; };
 		C8E8E8C4BB4C54647917C3C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2570060E24CFB9F4D9889256 /* LaunchScreen.storyboard */; };
 		DF1A54BB3CC6F77FD5C75172 /* Pods_Pharma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC03FAC3E2653A0CFEC93FAC /* Pods_Pharma.framework */; };
@@ -359,6 +365,10 @@
 		89835C74267EC69B00397244 /* ComponentInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentInfoViewController.swift; sourceTree = "<group>"; };
 		89835C7D267EC74900397244 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		899AAFDA2656AC460066CA10 /* VibroGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroGenerator.swift; sourceTree = "<group>"; };
+		89AA42E3267EDB7100EF0ACE /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
+		89AA42E5267EDE4400EF0ACE /* UserHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthTableViewCell.swift; sourceTree = "<group>"; };
+		89AA42E7267EE19B00EF0ACE /* Pharma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pharma.entitlements; sourceTree = "<group>"; };
+		89AA42E8267EE19B00EF0ACE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89DD277125DCFB2C00AD2868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -370,6 +380,9 @@
 		89F00A502542E16200D482F6 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		89F00A522542E16200D482F6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F00A532542E16200D482F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		89FC8C8F267ED5E8001DD5A3 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		89FC8C91267ED5EF001DD5A3 /* HealthKitManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManagerProtocol.swift; sourceTree = "<group>"; };
+		89FC8C95267ED736001DD5A3 /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
 		AA50F899D423B5FD91BAA4EB /* Pods-PharmaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmaTests.debug.xcconfig"; path = "Target Support Files/Pods-PharmaTests/Pods-PharmaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C478B2B98E37F18BAC093DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EEE75E08BB0BFE44AD9046BF /* PharmaTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = file; name = PharmaTests.xctest; path = Pharma.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -383,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF1A54BB3CC6F77FD5C75172 /* Pods_Pharma.framework in Frameworks */,
+				89AA42E9267EE19B00EF0ACE /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +457,7 @@
 		7DE24187D33E7237A73F2FC5 /* Pharma */ = {
 			isa = PBXGroup;
 			children = (
+				89AA42E7267EE19B00EF0ACE /* Pharma.entitlements */,
 				89F00A4A2542E16200D482F6 /* ApplicationLayer */,
 				8940644626122B7600DC682F /* CoreLayer */,
 				89F00A3A2542E16200D482F6 /* BusinessLogicLayer */,
@@ -723,8 +738,8 @@
 			children = (
 				895FFB7E267DAAB900256AF7 /* UserHealthInput.swift */,
 				895FFB7D267DAAB900256AF7 /* UserHealthOutput.swift */,
-				895FFB77267DAAB900256AF7 /* ViewModel */,
 				895FFB7A267DAAB900256AF7 /* Coordinator */,
+				895FFB77267DAAB900256AF7 /* ViewModel */,
 				895FFB7F267DAAB900256AF7 /* View */,
 			);
 			path = UserHealth;
@@ -733,8 +748,8 @@
 		895FFB77267DAAB900256AF7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				895FFB78267DAAB900256AF7 /* UserHealthViewModel.swift */,
 				895FFB79267DAAB900256AF7 /* UserHealthViewModelProtocol.swift */,
+				895FFB78267DAAB900256AF7 /* UserHealthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -753,6 +768,7 @@
 			children = (
 				895FFB80267DAAB900256AF7 /* UserHealthViewController.swift */,
 				895FFB81267DAAB900256AF7 /* UserHealthView.swift */,
+				89AA42E5267EDE4400EF0ACE /* UserHealthTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1104,6 +1120,7 @@
 		89F00A3A2542E16200D482F6 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				89FC8C8E267ED5DA001DD5A3 /* HealthKitManager */,
 				895FFC3C267E806A00256AF7 /* PurchaseManager */,
 				895FFC39267E806A00256AF7 /* SupplementsManager */,
 				895FFBFE267E241700256AF7 /* PharmaNetworkService */,
@@ -1193,6 +1210,25 @@
 			path = UserStories;
 			sourceTree = "<group>";
 		};
+		89FC8C8E267ED5DA001DD5A3 /* HealthKitManager */ = {
+			isa = PBXGroup;
+			children = (
+				89FC8C94267ED72D001DD5A3 /* Entities */,
+				89FC8C91267ED5EF001DD5A3 /* HealthKitManagerProtocol.swift */,
+				89FC8C8F267ED5E8001DD5A3 /* HealthKitManager.swift */,
+				89AA42E3267EDB7100EF0ACE /* ProfileDataStore.swift */,
+			);
+			path = HealthKitManager;
+			sourceTree = "<group>";
+		};
+		89FC8C94267ED72D001DD5A3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				89FC8C95267ED736001DD5A3 /* UserHealthProfile.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		AA79B48E92F24FB535E09EA5 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -1213,6 +1249,7 @@
 		D0B3612EACCC6D6A80AA8188 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89AA42E8267EE19B00EF0ACE /* HealthKit.framework */,
 				FC03FAC3E2653A0CFEC93FAC /* Pods_Pharma.framework */,
 				181AE00A56527B15EEF77B8C /* Pods_PharmaTests.framework */,
 			);
@@ -1514,6 +1551,8 @@
 				895FFBBD267DAABA00256AF7 /* UserHealthViewModel.swift in Sources */,
 				8940645626122B7600DC682F /* DataRequestExecutable.swift in Sources */,
 				895FFBBA267DAABA00256AF7 /* MainMenuViewController.swift in Sources */,
+				89AA42E6267EDE4400EF0ACE /* UserHealthTableViewCell.swift in Sources */,
+				89AA42E4267EDB7100EF0ACE /* ProfileDataStore.swift in Sources */,
 				894064E82612308800DC682F /* UITextField+placeholderPadding.swift in Sources */,
 				895FFBCE267DAABA00256AF7 /* SettingsViewModel.swift in Sources */,
 				895FFBB7267DAABA00256AF7 /* MainMenuInput.swift in Sources */,
@@ -1554,6 +1593,7 @@
 				895FFBF4267DAB0900256AF7 /* BarcodeMedsScanerCoordinator.swift in Sources */,
 				894064E42612308800DC682F /* UIImage+merge.swift in Sources */,
 				895FFC0D267E241700256AF7 /* PharmaRequestBuilder.swift in Sources */,
+				89FC8C90267ED5E8001DD5A3 /* HealthKitManager.swift in Sources */,
 				894064F02612308800DC682F /* LabelsSegmentedControl.swift in Sources */,
 				895FFBF2267DAB0900256AF7 /* BarcodeMedsScanerViewModelProtocol.swift in Sources */,
 				895FFBBB267DAABA00256AF7 /* CustomTabBar.swift in Sources */,
@@ -1577,8 +1617,10 @@
 				895FFBB6267DAABA00256AF7 /* MainMenuCoordinatorProtocol.swift in Sources */,
 				894064E92612308800DC682F /* UIStyleManager.swift in Sources */,
 				8940652E2612327C00DC682F /* LoadingView.swift in Sources */,
+				89FC8C96267ED736001DD5A3 /* UserHealthProfile.swift in Sources */,
 				895FFC12267E271E00256AF7 /* Article.swift in Sources */,
 				895FFBCA267DAABA00256AF7 /* AboutUsInput.swift in Sources */,
+				89FC8C92267ED5F0001DD5A3 /* HealthKitManagerProtocol.swift in Sources */,
 				895FFBF3267DAB0900256AF7 /* BarcodeMedsScanerViewModel.swift in Sources */,
 				895FFC2F267E3CB800256AF7 /* SupplementEditorOutput.swift in Sources */,
 				895FFBC2267DAABA00256AF7 /* UserHealthInput.swift in Sources */,
@@ -1738,6 +1780,7 @@
 			baseConfigurationReference = F1A97D24E1314BC504A0C8C1 /* Pods-Pharma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pharma/Pharma.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LBLG7J3SF4;
@@ -1760,6 +1803,7 @@
 			baseConfigurationReference = 0178F67D52AB8FF4AD0D9547 /* Pods-Pharma.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pharma/Pharma.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LBLG7J3SF4;
@@ -1793,6 +1837,7 @@
 			baseConfigurationReference = 678DC1594F1721FA4DC5EFE5 /* Pods-Pharma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pharma/Pharma.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LBLG7J3SF4;

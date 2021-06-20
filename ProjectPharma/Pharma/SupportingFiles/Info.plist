@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Pharma</string>
+	<string>ph.Arma</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,6 +22,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSHealthShareUsageDescription</key>
+    <string>We will share your prancercise data with other apps for better health accuracy</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>We will use your health information to track your Prancercise workouts better</string>
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) needs access to use your camera</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>

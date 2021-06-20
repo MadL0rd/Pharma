@@ -37,6 +37,13 @@
 
 // User Health
 "userHealthTitle" = "User health";
+"userHealthAge" = "Age";
+"userHealthBiologicalSex" = "Biological sex";
+"userHealthBloodType" = "Blood type";
+"userHealthHeightInMeters" = "Height";
+"userHealthWeightInKilograms" = "Weight";
+"userHealthBodyMassIndex" = "Body mass index";
+"userHealthPermissionText" = "Configure access to user data";
 
 // Settings
 "settingsTitle" = "Settings";

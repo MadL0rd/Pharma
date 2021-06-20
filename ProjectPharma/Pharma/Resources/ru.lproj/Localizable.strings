@@ -36,7 +36,14 @@
 "barcodeScanerSupplementNotFound" = "Supplement not found";
 
 // User Health
-"userHealthTitle" = "Здоровье";
+"userHealthTitle" = "Данные здоровья";
+"userHealthAge" = "Возраст";
+"userHealthBiologicalSex" = "Пол";
+"userHealthBloodType" = "Группа крови";
+"userHealthHeightInMeters" = "Рост";
+"userHealthWeightInKilograms" = "Вес";
+"userHealthBodyMassIndex" = "Индекс массы тела";
+"userHealthPermissionText" = "Настроить разрешения на использование данных";
 
 // Settings
 "settingsTitle" = "Настройки";

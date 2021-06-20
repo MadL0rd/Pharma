@@ -7,4 +7,6 @@
 
 protocol UserHealthViewModelProtocol: AnyObject {
     
+    func authorizeHealthKit(completion: @escaping () -> Void)
+    func loadUserHealthProfile(completion: @escaping (UserHealthProfile) -> Void)
 }

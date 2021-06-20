@@ -18,6 +18,8 @@ final class UserHealthCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        viewModel.healthKitManager = HealthKitManager.shared
 
         if let configuration = configuration {
             configuration(viewModel)
