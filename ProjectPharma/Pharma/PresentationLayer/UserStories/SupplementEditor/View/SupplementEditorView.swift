@@ -15,6 +15,7 @@ final class SupplementEditorView: UIView {
     let stack = UIStackView()
     
     let mainInfo = SupplementMainInfoView()
+    let recomendationView = RecomendationMockUpView()
     let compositionTitle = UILabel()
     let preInfoTitleLabel = UILabel()
     let tagsLabel = UILabel()
@@ -62,6 +63,8 @@ final class SupplementEditorView: UIView {
         stack.alignment = .leading
         
         stack.addArrangedSubview(mainInfo)
+        
+        stack.addArrangedSubview(recomendationView)
         
         stack.addArrangedSubview(compositionTitle)
         compositionTitle.text = .res.supplementCompositionTitle()

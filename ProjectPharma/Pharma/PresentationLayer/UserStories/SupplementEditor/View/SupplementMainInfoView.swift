@@ -46,7 +46,7 @@ class SupplementMainInfoView: UIView {
                 formatter.dateFormat = "dd.MM.yyyy"
                 shelfLifeDateLabel.text? += " " + formatter.string(from: date)
             } else {
-                shelfLifeDateLabel.text? += " --.--.----"
+                shelfLifeDateLabel.text? += " 22.07.2022"
             }
             
             countLabel.isHidden = false

@@ -168,6 +168,7 @@
 		89AA42E4267EDB7100EF0ACE /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA42E3267EDB7100EF0ACE /* ProfileDataStore.swift */; };
 		89AA42E6267EDE4400EF0ACE /* UserHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA42E5267EDE4400EF0ACE /* UserHealthTableViewCell.swift */; };
 		89AA42E9267EE19B00EF0ACE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AA42E8267EE19B00EF0ACE /* HealthKit.framework */; };
+		89AA42EB267EF3B100EF0ACE /* RecomendationMockUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA42EA267EF3B100EF0ACE /* RecomendationMockUpView.swift */; };
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
 		89DD277325DCFB2C00AD2868 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277125DCFB2C00AD2868 /* Colors.xcassets */; };
@@ -369,6 +370,7 @@
 		89AA42E5267EDE4400EF0ACE /* UserHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthTableViewCell.swift; sourceTree = "<group>"; };
 		89AA42E7267EE19B00EF0ACE /* Pharma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pharma.entitlements; sourceTree = "<group>"; };
 		89AA42E8267EE19B00EF0ACE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		89AA42EA267EF3B100EF0ACE /* RecomendationMockUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationMockUpView.swift; sourceTree = "<group>"; };
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89DD277125DCFB2C00AD2868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -622,6 +624,7 @@
 				894064D62612308800DC682F /* TouchClearUIComponents.swift */,
 				894064D72612308800DC682F /* ButtonWithTouchSize.swift */,
 				899AAFDA2656AC460066CA10 /* VibroGenerator.swift */,
+				89AA42EA267EF3B100EF0ACE /* RecomendationMockUpView.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -1497,6 +1500,7 @@
 				894064DA2612308800DC682F /* PickerViewManager.swift in Sources */,
 				894064E72612308800DC682F /* UIScrollView+ScrollToBottom.swift in Sources */,
 				895FFBE3267DAABA00256AF7 /* ShopSearchInput.swift in Sources */,
+				89AA42EB267EF3B100EF0ACE /* RecomendationMockUpView.swift in Sources */,
 				894064A226122D0100DC682F /* UserStoriesModulesAccounting.swift in Sources */,
 				89F00AB32542E16200D482F6 /* AppDelegate.swift in Sources */,
 				89F00AB02542E16200D482F6 /* AppRouter.swift in Sources */,
