@@ -13,6 +13,8 @@ final class BarcodeMedsScanerViewController: UIViewController {
     var viewModel: BarcodeMedsScanerViewModelProtocol!
     var coordinator: BarcodeMedsScanerCoordinatorProtocol!
     
+    let barcodeViewController = BarcodeScannerViewController()
+    
     private var _view: BarcodeMedsScanerView {
         return view as! BarcodeMedsScanerView
     }
@@ -28,12 +30,11 @@ final class BarcodeMedsScanerViewController: UIViewController {
     }
 
     private func configureSelf() {
-        let viewController = BarcodeScannerViewController()
-        viewController.codeDelegate = self
-        viewController.errorDelegate = self
-        viewController.dismissalDelegate = self
+        barcodeViewController.codeDelegate = self
+        barcodeViewController.errorDelegate = self
+        barcodeViewController.dismissalDelegate = self
         
-        addChildViewControllerToView(vc: viewController, into: _view.scanerContainer)
+        addChildViewControllerToView(vc: barcodeViewController, into: _view.scanerContainer)
     }
 }
 
@@ -52,12 +53,15 @@ extension BarcodeMedsScanerViewController: BarcodeScannerCodeDelegate {
                 return
             }
             
-            controller.reset()
-            AlertManager.showSuccessHUD(on: self.navigationController!.view)
-            self.viewModel.output?.returnSupplement(AidKitSupplement(id: 1,
-                                                                     supplement: supplement,
-                                                                     shelfLifeDate: nil,
-                                                                     itemsCount: supplement.tabletsCountInt ?? 0))
+            let data = AidKitSupplement(id: 1,
+                                        supplement: supplement,
+                                        shelfLifeDate: nil,
+                                        itemsCount: supplement.tabletsCountInt ?? 0)
+            DispatchQueue.main.async {
+                self.barcodeViewController.reset()
+                AlertManager.showSuccessHUD(on: self.navigationController!.view)
+                self.viewModel.output?.returnSupplement(data)
+            }
         }
     }
 }

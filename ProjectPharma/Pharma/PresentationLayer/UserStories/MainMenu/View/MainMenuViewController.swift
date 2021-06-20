@@ -83,6 +83,7 @@ final class MainMenuViewController: UITabBarController, TabBarModuleTransitionHa
 
     @objc private func addButtonDidTapped(sender: UIButton) {
         sender.tapAnimation()
+        VibroGenerator.light.impactOccurred()
         DispatchQueue.main.async { [ weak self ] in
             guard let self = self
             else { return }

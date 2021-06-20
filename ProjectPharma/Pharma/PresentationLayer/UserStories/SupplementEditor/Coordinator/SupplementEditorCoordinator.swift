@@ -30,4 +30,10 @@ final class SupplementEditorCoordinator: DefaultCoordinator {
 // MARK: - Interface for view
 extension SupplementEditorCoordinator: SupplementEditorCoordinatorProtocol {
 
+    func openComponentInfo(component: SupplementComponent) {
+        let vc = ComponentInfoCoordinator.createModule { viewModel in
+            viewModel.component = component
+        }
+        transition.showInRootNavigationController(vc)
+    }
 }

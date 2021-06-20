@@ -7,5 +7,5 @@
 
 protocol SupplementEditorViewModelProtocol: AnyObject {
     
-    var supplement: AidKitSupplement! { get }
+    var supplement: SupplementInputData! { get }
 }

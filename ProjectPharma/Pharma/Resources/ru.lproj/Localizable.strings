@@ -49,3 +49,9 @@
 
 // About us
 "aboutUsTitle" = "О нас";
+
+// Supplement screen
+"supplementScreenShelfLifeDate" = "Годен до";
+"supplementScreenPcs" = "шт.";
+"supplementCompositionTitle" = "Состав";
+"supplementComponentRateSubitle" = "Оценка по исследованиям";

@@ -54,4 +54,32 @@ class UIStyleManager {
         textField.attributedPlaceholder = NSAttributedString(string: placeholderText,
                                                              attributes: attributes)
     }
+    
+    // MARK: - UILabel
+    
+    static func labelH1(_ label: UILabel) {
+        label.textColor = .res.tintDark()
+        label.font = .res.gilroyBold(size: 18)
+        label.numberOfLines = 0
+    }
+    
+    static func labelH2(_ label: UILabel) {
+        label.textColor = .res.tintDark()
+        label.font = .res.gilroyBold(size: 16)
+        label.numberOfLines = 0
+    }
+    
+    static func labelH3(_ label: UILabel) {
+        label.textColor = .res.tintDark()
+        label.font = .res.gilroySemibold(size: 14)
+        label.numberOfLines = 0
+    }
+    
+    static func labelSmall(_ label: UILabel) {
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .res.tintGrayPale()
+        label.font = .res.gilroyRegular(size: 10)
+        label.numberOfLines = 1
+        label.textAlignment = .left
+    }
 }

@@ -52,7 +52,9 @@ extension MainMenuCoordinator: MainMenuCoordinatorProtocol {
     
     func openSupplementEditor(supplement: AidKitSupplement) {
         let vc = SupplementEditorCoordinator.createModule { viewModel in
-            viewModel.supplement = supplement
+            //        TODO: Test only   
+            viewModel.supplement = .aidKitSupplement(supplementAidKit: supplement)
+//            viewModel.supplement = .supplement(supplement: supplement.supplement)
         }
         transition.showInRootNavigationController(vc)
     }

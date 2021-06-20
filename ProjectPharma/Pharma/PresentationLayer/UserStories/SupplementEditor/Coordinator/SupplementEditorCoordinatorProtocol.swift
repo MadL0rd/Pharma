@@ -7,4 +7,5 @@
 
 protocol SupplementEditorCoordinatorProtocol: DefaultCoordinatorProtocol {
     
+    func openComponentInfo(component: SupplementComponent)
 }

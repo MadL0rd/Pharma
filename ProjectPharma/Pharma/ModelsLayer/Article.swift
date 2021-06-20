@@ -9,4 +9,8 @@ import Foundation
 
 struct Article: Codable {
     
+    let id: Int
+    let name: String
+    let link: String
+    let rating: Int
 }

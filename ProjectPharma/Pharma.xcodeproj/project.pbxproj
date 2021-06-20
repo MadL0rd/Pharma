@@ -136,8 +136,6 @@
 		895FFC10267E26BB00256AF7 /* Supplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC0F267E26BB00256AF7 /* Supplement.swift */; };
 		895FFC12267E271E00256AF7 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC11267E271E00256AF7 /* Article.swift */; };
 		895FFC14267E277800256AF7 /* SupplementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC13267E277800256AF7 /* SupplementComponent.swift */; };
-		895FFC17267E383900256AF7 /* SupplementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC16267E383900256AF7 /* SupplementsManager.swift */; };
-		895FFC19267E384100256AF7 /* SupplementsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC18267E384100256AF7 /* SupplementsManagerProtocol.swift */; };
 		895FFC1B267E387F00256AF7 /* AidKitSupplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC1A267E387F00256AF7 /* AidKitSupplement.swift */; };
 		895FFC2A267E3CB800256AF7 /* SupplementEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC20267E3CB800256AF7 /* SupplementEditorViewModel.swift */; };
 		895FFC2B267E3CB800256AF7 /* SupplementEditorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC21267E3CB800256AF7 /* SupplementEditorViewModelProtocol.swift */; };
@@ -147,10 +145,25 @@
 		895FFC2F267E3CB800256AF7 /* SupplementEditorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC26267E3CB800256AF7 /* SupplementEditorOutput.swift */; };
 		895FFC30267E3CB800256AF7 /* SupplementEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC28267E3CB800256AF7 /* SupplementEditorView.swift */; };
 		895FFC31267E3CB800256AF7 /* SupplementEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC29267E3CB800256AF7 /* SupplementEditorViewController.swift */; };
+		895FFC3F267E806A00256AF7 /* SupplementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC3A267E806A00256AF7 /* SupplementsManager.swift */; };
+		895FFC40267E806A00256AF7 /* SupplementsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC3B267E806A00256AF7 /* SupplementsManagerProtocol.swift */; };
+		895FFC41267E806A00256AF7 /* PurchaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC3D267E806A00256AF7 /* PurchaseManagerProtocol.swift */; };
+		895FFC42267E806A00256AF7 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895FFC3E267E806A00256AF7 /* PurchaseManager.swift */; };
 		8965F11F2675C59000454B69 /* Array+isNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */; };
 		897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FC3D8261690DC002352E7 /* UIViewController+alert.swift */; };
 		8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */; };
 		8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8981FD812656EC5600993B65 /* AlertPresentationView.swift */; };
+		89835C62267E9DAC00397244 /* SupplementMainInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C61267E9DAC00397244 /* SupplementMainInfoView.swift */; };
+		89835C64267EBAF600397244 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C63267EBAF600397244 /* ComponentTableViewCell.swift */; };
+		89835C75267EC69B00397244 /* ComponentInfoViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C6B267EC69B00397244 /* ComponentInfoViewModelProtocol.swift */; };
+		89835C76267EC69B00397244 /* ComponentInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C6C267EC69B00397244 /* ComponentInfoViewModel.swift */; };
+		89835C77267EC69B00397244 /* ComponentInfoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C6D267EC69B00397244 /* ComponentInfoOutput.swift */; };
+		89835C78267EC69B00397244 /* ComponentInfoCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C6F267EC69B00397244 /* ComponentInfoCoordinatorProtocol.swift */; };
+		89835C79267EC69B00397244 /* ComponentInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C70267EC69B00397244 /* ComponentInfoCoordinator.swift */; };
+		89835C7A267EC69B00397244 /* ComponentInfoInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C71267EC69B00397244 /* ComponentInfoInput.swift */; };
+		89835C7B267EC69B00397244 /* ComponentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C73267EC69B00397244 /* ComponentInfoView.swift */; };
+		89835C7C267EC69B00397244 /* ComponentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C74267EC69B00397244 /* ComponentInfoViewController.swift */; };
+		89835C7E267EC74900397244 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89835C7D267EC74900397244 /* ArticleTableViewCell.swift */; };
 		899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899AAFDA2656AC460066CA10 /* VibroGenerator.swift */; };
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
@@ -317,8 +330,6 @@
 		895FFC0F267E26BB00256AF7 /* Supplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplement.swift; sourceTree = "<group>"; };
 		895FFC11267E271E00256AF7 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		895FFC13267E277800256AF7 /* SupplementComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementComponent.swift; sourceTree = "<group>"; };
-		895FFC16267E383900256AF7 /* SupplementsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementsManager.swift; sourceTree = "<group>"; };
-		895FFC18267E384100256AF7 /* SupplementsManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementsManagerProtocol.swift; sourceTree = "<group>"; };
 		895FFC1A267E387F00256AF7 /* AidKitSupplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AidKitSupplement.swift; sourceTree = "<group>"; };
 		895FFC20267E3CB800256AF7 /* SupplementEditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorViewModel.swift; sourceTree = "<group>"; };
 		895FFC21267E3CB800256AF7 /* SupplementEditorViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -328,10 +339,25 @@
 		895FFC26267E3CB800256AF7 /* SupplementEditorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorOutput.swift; sourceTree = "<group>"; };
 		895FFC28267E3CB800256AF7 /* SupplementEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorView.swift; sourceTree = "<group>"; };
 		895FFC29267E3CB800256AF7 /* SupplementEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementEditorViewController.swift; sourceTree = "<group>"; };
+		895FFC3A267E806A00256AF7 /* SupplementsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementsManager.swift; sourceTree = "<group>"; };
+		895FFC3B267E806A00256AF7 /* SupplementsManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementsManagerProtocol.swift; sourceTree = "<group>"; };
+		895FFC3D267E806A00256AF7 /* PurchaseManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManagerProtocol.swift; sourceTree = "<group>"; };
+		895FFC3E267E806A00256AF7 /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		8965F11E2675C59000454B69 /* Array+isNotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+isNotEmpty.swift"; sourceTree = "<group>"; };
 		897FC3D8261690DC002352E7 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		8981FD7F2656EBF000993B65 /* AlertPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationViewController.swift; sourceTree = "<group>"; };
 		8981FD812656EC5600993B65 /* AlertPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentationView.swift; sourceTree = "<group>"; };
+		89835C61267E9DAC00397244 /* SupplementMainInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementMainInfoView.swift; sourceTree = "<group>"; };
+		89835C63267EBAF600397244 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
+		89835C6B267EC69B00397244 /* ComponentInfoViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentInfoViewModelProtocol.swift; sourceTree = "<group>"; };
+		89835C6C267EC69B00397244 /* ComponentInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentInfoViewModel.swift; sourceTree = "<group>"; };
+		89835C6D267EC69B00397244 /* ComponentInfoOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentInfoOutput.swift; sourceTree = "<group>"; };
+		89835C6F267EC69B00397244 /* ComponentInfoCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentInfoCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		89835C70267EC69B00397244 /* ComponentInfoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentInfoCoordinator.swift; sourceTree = "<group>"; };
+		89835C71267EC69B00397244 /* ComponentInfoInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentInfoInput.swift; sourceTree = "<group>"; };
+		89835C73267EC69B00397244 /* ComponentInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentInfoView.swift; sourceTree = "<group>"; };
+		89835C74267EC69B00397244 /* ComponentInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentInfoViewController.swift; sourceTree = "<group>"; };
+		89835C7D267EC74900397244 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		899AAFDA2656AC460066CA10 /* VibroGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroGenerator.swift; sourceTree = "<group>"; };
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -775,8 +801,8 @@
 			children = (
 				895FFB9A267DAAB900256AF7 /* SettingsInput.swift */,
 				895FFB99267DAAB900256AF7 /* SettingsOutput.swift */,
-				895FFB8F267DAAB900256AF7 /* ViewModel */,
 				895FFB92267DAAB900256AF7 /* Coordinator */,
+				895FFB8F267DAAB900256AF7 /* ViewModel */,
 				895FFB95267DAAB900256AF7 /* View */,
 			);
 			path = Settings;
@@ -957,15 +983,6 @@
 			path = RequestBuilder;
 			sourceTree = "<group>";
 		};
-		895FFC15267E381700256AF7 /* SupplementsManager */ = {
-			isa = PBXGroup;
-			children = (
-				895FFC18267E384100256AF7 /* SupplementsManagerProtocol.swift */,
-				895FFC16267E383900256AF7 /* SupplementsManager.swift */,
-			);
-			path = SupplementsManager;
-			sourceTree = "<group>";
-		};
 		895FFC1E267E3CB800256AF7 /* SupplementEditor */ = {
 			isa = PBXGroup;
 			children = (
@@ -1001,8 +1018,28 @@
 			children = (
 				895FFC29267E3CB800256AF7 /* SupplementEditorViewController.swift */,
 				895FFC28267E3CB800256AF7 /* SupplementEditorView.swift */,
+				89835C61267E9DAC00397244 /* SupplementMainInfoView.swift */,
+				89835C63267EBAF600397244 /* ComponentTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		895FFC39267E806A00256AF7 /* SupplementsManager */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC3A267E806A00256AF7 /* SupplementsManager.swift */,
+				895FFC3B267E806A00256AF7 /* SupplementsManagerProtocol.swift */,
+			);
+			path = SupplementsManager;
+			sourceTree = "<group>";
+		};
+		895FFC3C267E806A00256AF7 /* PurchaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				895FFC3D267E806A00256AF7 /* PurchaseManagerProtocol.swift */,
+				895FFC3E267E806A00256AF7 /* PurchaseManager.swift */,
+			);
+			path = PurchaseManager;
 			sourceTree = "<group>";
 		};
 		8981FD7E2656EBE400993B65 /* AlertPresentationViewController */ = {
@@ -1012,6 +1049,46 @@
 				8981FD812656EC5600993B65 /* AlertPresentationView.swift */,
 			);
 			path = AlertPresentationViewController;
+			sourceTree = "<group>";
+		};
+		89835C69267EC69B00397244 /* ComponentInfo */ = {
+			isa = PBXGroup;
+			children = (
+				89835C71267EC69B00397244 /* ComponentInfoInput.swift */,
+				89835C6D267EC69B00397244 /* ComponentInfoOutput.swift */,
+				89835C6E267EC69B00397244 /* Coordinator */,
+				89835C6A267EC69B00397244 /* ViewModel */,
+				89835C72267EC69B00397244 /* View */,
+			);
+			path = ComponentInfo;
+			sourceTree = "<group>";
+		};
+		89835C6A267EC69B00397244 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89835C6B267EC69B00397244 /* ComponentInfoViewModelProtocol.swift */,
+				89835C6C267EC69B00397244 /* ComponentInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89835C6E267EC69B00397244 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				89835C6F267EC69B00397244 /* ComponentInfoCoordinatorProtocol.swift */,
+				89835C70267EC69B00397244 /* ComponentInfoCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		89835C72267EC69B00397244 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89835C74267EC69B00397244 /* ComponentInfoViewController.swift */,
+				89835C73267EC69B00397244 /* ComponentInfoView.swift */,
+				89835C7D267EC74900397244 /* ArticleTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		89F00A302542E16200D482F6 /* Constants */ = {
@@ -1027,7 +1104,8 @@
 		89F00A3A2542E16200D482F6 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
-				895FFC15267E381700256AF7 /* SupplementsManager */,
+				895FFC3C267E806A00256AF7 /* PurchaseManager */,
+				895FFC39267E806A00256AF7 /* SupplementsManager */,
 				895FFBFE267E241700256AF7 /* PharmaNetworkService */,
 			);
 			path = BusinessLogicLayer;
@@ -1110,6 +1188,7 @@
 				895FFB8E267DAAB900256AF7 /* Settings */,
 				895FFB82267DAAB900256AF7 /* AboutUs */,
 				895FFC1E267E3CB800256AF7 /* SupplementEditor */,
+				89835C69267EC69B00397244 /* ComponentInfo */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -1364,6 +1443,7 @@
 				895FFC30267E3CB800256AF7 /* SupplementEditorView.swift in Sources */,
 				895FFC0E267E241700256AF7 /* PharmaRoutes.swift in Sources */,
 				894064E02612308800DC682F /* UIViewController+addChildViewControllerToView.swift in Sources */,
+				89835C79267EC69B00397244 /* ComponentInfoCoordinator.swift in Sources */,
 				895FFC14267E277800256AF7 /* SupplementComponent.swift in Sources */,
 				895FFBC9267DAABA00256AF7 /* AboutUsOutput.swift in Sources */,
 				895FFBBF267DAABA00256AF7 /* UserHealthCoordinator.swift in Sources */,
@@ -1372,8 +1452,10 @@
 				895FFBE1267DAABA00256AF7 /* ShopSearchCoordinator.swift in Sources */,
 				899AAFDB2656AC460066CA10 /* VibroGenerator.swift in Sources */,
 				894064F12612308800DC682F /* SegmentedControl.swift in Sources */,
+				89835C7C267EC69B00397244 /* ComponentInfoViewController.swift in Sources */,
 				895FFC08267E241700256AF7 /* PharmaNetworkService.swift in Sources */,
 				8940652A2612327C00DC682F /* LoadingViewModel.swift in Sources */,
+				89835C77267EC69B00397244 /* ComponentInfoOutput.swift in Sources */,
 				894064F32612308800DC682F /* ArrowDownButton.swift in Sources */,
 				894064DA2612308800DC682F /* PickerViewManager.swift in Sources */,
 				894064E72612308800DC682F /* UIScrollView+ScrollToBottom.swift in Sources */,
@@ -1403,13 +1485,14 @@
 				895FFBC6267DAABA00256AF7 /* AboutUsViewModel.swift in Sources */,
 				895FFBE0267DAABA00256AF7 /* ShopSearchCoordinatorProtocol.swift in Sources */,
 				894064F22612308800DC682F /* ScrollMovingUpManagerForUIControl.swift in Sources */,
+				89835C76267EC69B00397244 /* ComponentInfoViewModel.swift in Sources */,
 				8965F11F2675C59000454B69 /* Array+isNotEmpty.swift in Sources */,
 				895FFBC5267DAABA00256AF7 /* AboutUsViewModelProtocol.swift in Sources */,
 				895FFC2A267E3CB800256AF7 /* SupplementEditorViewModel.swift in Sources */,
 				894064D82612308800DC682F /* AlertManager.swift in Sources */,
 				8940645126122B7600DC682F /* CustomPatchEncoding.swift in Sources */,
+				895FFC3F267E806A00256AF7 /* SupplementsManager.swift in Sources */,
 				895FFBF8267DAB0A00256AF7 /* BarcodeMedsScanerView.swift in Sources */,
-				895FFC17267E383900256AF7 /* SupplementsManager.swift in Sources */,
 				895FFBC7267DAABA00256AF7 /* AboutUsCoordinator.swift in Sources */,
 				895FFC09267E241700256AF7 /* PharmaNetworkServiceProtocol.swift in Sources */,
 				894064DF2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift in Sources */,
@@ -1419,9 +1502,11 @@
 				894064EE2612308800DC682F /* PaddingLabel.swift in Sources */,
 				8981FD822656EC5600993B65 /* AlertPresentationView.swift in Sources */,
 				8981FD802656EBF000993B65 /* AlertPresentationViewController.swift in Sources */,
+				895FFC41267E806A00256AF7 /* PurchaseManagerProtocol.swift in Sources */,
 				895FFBD2267DAABA00256AF7 /* SettingsTableViewCell.swift in Sources */,
 				8940652C2612327C00DC682F /* LoadingCoordinator.swift in Sources */,
 				895FFBBC267DAABA00256AF7 /* MainMenuOutput.swift in Sources */,
+				895FFC42267E806A00256AF7 /* PurchaseManager.swift in Sources */,
 				894064F52612308800DC682F /* TouchClearUIComponents.swift in Sources */,
 				894064E22612308800DC682F /* String+SizeCalculator.swift in Sources */,
 				895FFBCD267DAABA00256AF7 /* SettingsViewModelProtocol.swift in Sources */,
@@ -1435,11 +1520,13 @@
 				89E608662658897C00E6707C /* Contacts.swift in Sources */,
 				895FFBB5267DAABA00256AF7 /* MainMenuCoordinator.swift in Sources */,
 				895FFBF5267DAB0900256AF7 /* BarcodeMedsScanerCoordinatorProtocol.swift in Sources */,
+				89835C62267E9DAC00397244 /* SupplementMainInfoView.swift in Sources */,
 				8940645526122B7600DC682F /* NetworkErrors.swift in Sources */,
 				895FFBD0267DAABA00256AF7 /* SettingsCoordinator.swift in Sources */,
 				895FFBB9267DAABA00256AF7 /* TabBarModuleTransitionHandler.swift in Sources */,
 				895FFBC3267DAABA00256AF7 /* UserHealthViewController.swift in Sources */,
 				894064ED2612308800DC682F /* LimitatableTextView.swift in Sources */,
+				89835C78267EC69B00397244 /* ComponentInfoCoordinatorProtocol.swift in Sources */,
 				895FFBDA267DAABA00256AF7 /* AidKitTrackerCoordinatorProtocol.swift in Sources */,
 				895FFBCC267DAABA00256AF7 /* AboutUsViewController.swift in Sources */,
 				895FFC2E267E3CB800256AF7 /* SupplementEditorCoordinator.swift in Sources */,
@@ -1449,9 +1536,10 @@
 				89F00AB12542E16200D482F6 /* MainAppRouter.swift in Sources */,
 				894064DC2612308800DC682F /* UIView+layerAnimation.swift in Sources */,
 				894064E52612308800DC682F /* UIView+shake.swift in Sources */,
+				89835C64267EBAF600397244 /* ComponentTableViewCell.swift in Sources */,
 				8940645426122B7600DC682F /* NetworkService.swift in Sources */,
-				895FFC19267E384100256AF7 /* SupplementsManagerProtocol.swift in Sources */,
 				8940645326122B7600DC682F /* DataParser.swift in Sources */,
+				895FFC40267E806A00256AF7 /* SupplementsManagerProtocol.swift in Sources */,
 				894064E62612308800DC682F /* UIColor+rgba.swift in Sources */,
 				895FFBDB267DAABA00256AF7 /* AidKitTrackerViewController.swift in Sources */,
 				894065302612327C00DC682F /* LoadingInput.swift in Sources */,
@@ -1470,8 +1558,11 @@
 				895FFBF2267DAB0900256AF7 /* BarcodeMedsScanerViewModelProtocol.swift in Sources */,
 				895FFBBB267DAABA00256AF7 /* CustomTabBar.swift in Sources */,
 				895FFC31267E3CB800256AF7 /* SupplementEditorViewController.swift in Sources */,
+				89835C7B267EC69B00397244 /* ComponentInfoView.swift in Sources */,
+				89835C75267EC69B00397244 /* ComponentInfoViewModelProtocol.swift in Sources */,
 				894064F62612308800DC682F /* ButtonWithTouchSize.swift in Sources */,
 				895FFBD7267DAABA00256AF7 /* AidKitTrackerViewModelProtocol.swift in Sources */,
+				89835C7E267EC74900397244 /* ArticleTableViewCell.swift in Sources */,
 				895FFBC8267DAABA00256AF7 /* AboutUsCoordinatorProtocol.swift in Sources */,
 				89E608672658897C00E6707C /* LocalOnlyConstants.swift in Sources */,
 				892B1FA0261D2EA200329B0A /* UserDefaults+color.swift in Sources */,
@@ -1500,6 +1591,7 @@
 				89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */,
 				892B1F9F261D2EA200329B0A /* SKProduct+localizedPrice.swift in Sources */,
 				894064EC2612308800DC682F /* DefaultCoordinator.swift in Sources */,
+				89835C7A267EC69B00397244 /* ComponentInfoInput.swift in Sources */,
 				892B1FA1261D2EA200329B0A /* Array+weakObjects.swift in Sources */,
 				895FFBD5267DAABA00256AF7 /* SettingsInput.swift in Sources */,
 				894064EA2612308800DC682F /* ModuleTransitionHandler.swift in Sources */,

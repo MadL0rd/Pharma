@@ -50,3 +50,9 @@
 // About us
 "aboutUsTitle" = "About us";
 
+// Supplement screen
+"supplementScreenShelfLifeDate" = "Shelf life";
+"supplementScreenPcs" = "pcs.";
+"supplementCompositionTitle" = "Composition";
+"supplementComponentRateSubitle" = "Research score";
+

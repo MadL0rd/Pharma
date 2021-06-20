@@ -65,20 +65,24 @@ final class SettingsViewController: UIViewController {
     private func generateMenuModules() {
         var module = MenuModule(title: "")
         module.rows.append(contentsOf: [
-            .init(image: R.image.settingsSupport(),
-                  title: R.string.localizable.settingsSupport(),
-                  action: {}),
+            .init(image: .res.settingsSupport(),
+                  title: .res.settingsSupport(),
+                  action: { [ weak self ] in
+                    guard let url = self?.viewModel.supportUrl
+                    else { return }
+                    UIApplication.shared.open(url)
+                  }),
             
-            .init(image: R.image.settingsRateApp(),
-                  title: R.string.localizable.settingsRateApp(),
-                  action: {})
+            .init(image: .res.settingsRateApp(),
+                  title: .res.settingsRateApp(),
+                  action: { [ weak self ] in self?.viewModel.rateApp() })
         ])
         menu.append(module)
         
         module = MenuModule(title: "")
         module.rows.append(contentsOf: [
-            .init(image: R.image.settingsAboutUs(),
-                  title: R.string.localizable.settingsAboutUs(),
+            .init(image: .res.settingsAboutUs(),
+                  title: .res.settingsAboutUs(),
                   action: { [ weak self ] in
                     self?.coordinator.openModule(.aboutUs, openingMode: .showInRootNavigationController)
                   })
@@ -87,12 +91,20 @@ final class SettingsViewController: UIViewController {
         
         module = MenuModule(title: "")
         module.rows.append(contentsOf: [
-            .init(image: R.image.settingsDefault(),
-                  title: R.string.localizable.settingsUserAgreement(),
-                  action: {}),
-            .init(image: R.image.settingsDefault(),
-                  title: R.string.localizable.settingsPrivacyPolicy(),
-                  action: {})
+            .init(image: .res.settingsDefault(),
+                  title: .res.settingsUserAgreement(),
+                  action: { [ weak self ] in
+                    guard let url = self?.viewModel.termsOfUsageUrl
+                    else { return }
+                    UIApplication.shared.open(url)
+                  }),
+            .init(image: .res.settingsDefault(),
+                  title: .res.settingsPrivacyPolicy(),
+                  action: { [ weak self ] in
+                    guard let url = self?.viewModel.privacyPolicyUrl
+                    else { return }
+                    UIApplication.shared.open(url)
+                  })
         ])
         menu.append(module)
     }

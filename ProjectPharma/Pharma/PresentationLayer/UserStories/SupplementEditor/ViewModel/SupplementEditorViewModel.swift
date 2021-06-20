@@ -8,7 +8,7 @@
 final class SupplementEditorViewModel {
 	var output: SupplementEditorOutput?
     
-    var supplement: AidKitSupplement!
+    var supplement: SupplementInputData!
 }
 
 // MARK: - Configuration

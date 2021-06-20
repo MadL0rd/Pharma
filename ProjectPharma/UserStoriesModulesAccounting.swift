@@ -15,6 +15,7 @@ enum UserStoriesModulesDefault: ModuleGenerator {
     case aboutUs
     case loading
     case shopSearch
+    case componentInfo
     case userHealth
     case aidKitTracker
     case mainMenu
@@ -32,6 +33,8 @@ enum UserStoriesModulesDefault: ModuleGenerator {
             return LoadingCoordinator.createModule()
         case .shopSearch: 
             return ShopSearchCoordinator.createModule()
+        case .componentInfo: 
+            return ComponentInfoCoordinator.createModule()
         case .userHealth: 
             return UserHealthCoordinator.createModule()
         case .aidKitTracker: 
@@ -51,6 +54,7 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
     case aboutUs(output: AboutUsOutput)
     case loading(output: LoadingOutput)
     case shopSearch(output: ShopSearchOutput)
+    case componentInfo(output: ComponentInfoOutput)
     case userHealth(output: UserHealthOutput)
     case aidKitTracker(output: AidKitTrackerOutput)
     case mainMenu(output: MainMenuOutput)
@@ -80,6 +84,11 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
             
         case .shopSearch(let output): 
             return ShopSearchCoordinator.createModule { viewModel in 
+                viewModel.output = output
+            }
+            
+        case .componentInfo(let output): 
+            return ComponentInfoCoordinator.createModule { viewModel in 
                 viewModel.output = output
             }
             
