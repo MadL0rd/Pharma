@@ -62,6 +62,8 @@ final class AidKitTrackerView: UIView {
         recomendationImageMockUp.translatesAutoresizingMaskIntoConstraints = false
         recomendationImageMockUp.contentMode = .scaleAspectFill
         
+        stack.setCustomSpacing(30, after: recomendationImageMockUp)
+        
         stack.addArrangedSubview(tableTitle)
         UIStyleManager.labelH2(tableTitle)
         tableTitle.text = "График приема БАДов"
