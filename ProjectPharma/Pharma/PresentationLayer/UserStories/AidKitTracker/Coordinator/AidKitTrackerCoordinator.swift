@@ -18,6 +18,8 @@ final class AidKitTrackerCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        viewModel.supplementsManager = SupplementsManager.shared
 
         if let configuration = configuration {
             configuration(viewModel)
@@ -30,4 +32,10 @@ final class AidKitTrackerCoordinator: DefaultCoordinator {
 // MARK: - Interface for view
 extension AidKitTrackerCoordinator: AidKitTrackerCoordinatorProtocol {
 
+    func openSupplementEditor(supplement: AidKitSupplement) {
+        let vc = SupplementEditorCoordinator.createModule { viewModel in
+            viewModel.supplement = .aidKitSupplement(supplementAidKit: supplement)
+        }
+        transition.showInRootNavigationController(vc)
+    }
 }

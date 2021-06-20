@@ -77,7 +77,7 @@ class UIStyleManager {
     
     static func labelSmall(_ label: UILabel) {
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .res.tintGrayPale()
+        label.textColor = .res.tintGray()
         label.font = .res.gilroyRegular(size: 10)
         label.numberOfLines = 1
         label.textAlignment = .left

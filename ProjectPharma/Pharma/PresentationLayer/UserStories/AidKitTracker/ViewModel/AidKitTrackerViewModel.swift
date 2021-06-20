@@ -9,6 +9,7 @@ final class AidKitTrackerViewModel {
     
 	var output: AidKitTrackerOutput?
     
+    var supplementsManager: SupplementsManagerProtocol!
 }
 
 // MARK: - Configuration
@@ -18,6 +19,10 @@ extension AidKitTrackerViewModel: CustomizableAidKitTrackerViewModel {
 
 // MARK: - Interface for view
 extension AidKitTrackerViewModel: AidKitTrackerViewModelProtocol {
-
+    
+    var supplements: [AidKitSupplement] {
+        supplementsManager.supplements
+    }
+    
 }
 

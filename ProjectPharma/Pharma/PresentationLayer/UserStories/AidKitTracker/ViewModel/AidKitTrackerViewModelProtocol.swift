@@ -7,4 +7,5 @@
 
 protocol AidKitTrackerViewModelProtocol: AnyObject {
     
+    var supplements: [AidKitSupplement] { get }
 }

@@ -18,6 +18,8 @@ final class MainMenuCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        viewModel.supplementsManager = SupplementsManager.shared
 
         if let configuration = configuration {
             configuration(viewModel)
@@ -52,9 +54,7 @@ extension MainMenuCoordinator: MainMenuCoordinatorProtocol {
     
     func openSupplementEditor(supplement: AidKitSupplement) {
         let vc = SupplementEditorCoordinator.createModule { viewModel in
-            //        TODO: Test only   
             viewModel.supplement = .aidKitSupplement(supplementAidKit: supplement)
-//            viewModel.supplement = .supplement(supplement: supplement.supplement)
         }
         transition.showInRootNavigationController(vc)
     }

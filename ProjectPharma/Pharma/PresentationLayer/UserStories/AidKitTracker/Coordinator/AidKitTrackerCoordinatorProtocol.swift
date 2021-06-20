@@ -7,4 +7,5 @@
 
 protocol AidKitTrackerCoordinatorProtocol: DefaultCoordinatorProtocol {
     
+    func openSupplementEditor(supplement: AidKitSupplement)
 }

@@ -106,6 +106,7 @@ extension MainMenuViewController: CustomTabBarSelectionDelegate {
 extension MainMenuViewController: BarcodeMedsScanerOutput {
     
     func returnSupplement(_ supplement: AidKitSupplement) {
+        viewModel.addSupplement(supplement)
         coordinator.openSupplementEditor(supplement: supplement)
     }
 }

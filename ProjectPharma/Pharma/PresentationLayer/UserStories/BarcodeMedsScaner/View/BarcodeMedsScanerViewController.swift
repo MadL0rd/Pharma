@@ -61,6 +61,7 @@ extension BarcodeMedsScanerViewController: BarcodeScannerCodeDelegate {
                 self.barcodeViewController.reset()
                 AlertManager.showSuccessHUD(on: self.navigationController!.view)
                 self.viewModel.output?.returnSupplement(data)
+                self.coordinator.dismiss()
             }
         }
     }

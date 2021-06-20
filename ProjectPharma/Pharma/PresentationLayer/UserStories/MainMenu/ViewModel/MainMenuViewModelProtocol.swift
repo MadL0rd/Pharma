@@ -7,4 +7,5 @@
 
 protocol MainMenuViewModelProtocol: AnyObject {
     
+    func addSupplement(_ supplement: AidKitSupplement)
 }

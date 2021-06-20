@@ -169,6 +169,7 @@
 		89AA42E6267EDE4400EF0ACE /* UserHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA42E5267EDE4400EF0ACE /* UserHealthTableViewCell.swift */; };
 		89AA42E9267EE19B00EF0ACE /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AA42E8267EE19B00EF0ACE /* HealthKit.framework */; };
 		89AA42EB267EF3B100EF0ACE /* RecomendationMockUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA42EA267EF3B100EF0ACE /* RecomendationMockUpView.swift */; };
+		89AA42ED267EFE6500EF0ACE /* SupplementAidKitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AA42EC267EFE6500EF0ACE /* SupplementAidKitTableViewCell.swift */; };
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
 		89DD277325DCFB2C00AD2868 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277125DCFB2C00AD2868 /* Colors.xcassets */; };
@@ -371,6 +372,7 @@
 		89AA42E7267EE19B00EF0ACE /* Pharma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pharma.entitlements; sourceTree = "<group>"; };
 		89AA42E8267EE19B00EF0ACE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		89AA42EA267EF3B100EF0ACE /* RecomendationMockUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationMockUpView.swift; sourceTree = "<group>"; };
+		89AA42EC267EFE6500EF0ACE /* SupplementAidKitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementAidKitTableViewCell.swift; sourceTree = "<group>"; };
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89DD277125DCFB2C00AD2868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -701,8 +703,8 @@
 			children = (
 				895FFB6F267DAAB900256AF7 /* MainMenuInput.swift */,
 				895FFB75267DAAB900256AF7 /* MainMenuOutput.swift */,
-				895FFB69267DAAB900256AF7 /* ViewModel */,
 				895FFB6C267DAAB900256AF7 /* Coordinator */,
+				895FFB69267DAAB900256AF7 /* ViewModel */,
 				895FFB70267DAAB900256AF7 /* View */,
 			);
 			path = MainMenu;
@@ -870,8 +872,8 @@
 		895FFB9C267DAAB900256AF7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				895FFB9D267DAAB900256AF7 /* AidKitTrackerViewModel.swift */,
 				895FFB9E267DAAB900256AF7 /* AidKitTrackerViewModelProtocol.swift */,
+				895FFB9D267DAAB900256AF7 /* AidKitTrackerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -879,8 +881,8 @@
 		895FFBA0267DAAB900256AF7 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				895FFBA1267DAAB900256AF7 /* AidKitTrackerCoordinator.swift */,
 				895FFBA2267DAAB900256AF7 /* AidKitTrackerCoordinatorProtocol.swift */,
+				895FFBA1267DAAB900256AF7 /* AidKitTrackerCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -890,6 +892,7 @@
 			children = (
 				895FFBA4267DAAB900256AF7 /* AidKitTrackerViewController.swift */,
 				895FFBA5267DAAB900256AF7 /* AidKitTrackerView.swift */,
+				89AA42EC267EFE6500EF0ACE /* SupplementAidKitTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1046,8 +1049,8 @@
 		895FFC39267E806A00256AF7 /* SupplementsManager */ = {
 			isa = PBXGroup;
 			children = (
-				895FFC3A267E806A00256AF7 /* SupplementsManager.swift */,
 				895FFC3B267E806A00256AF7 /* SupplementsManagerProtocol.swift */,
+				895FFC3A267E806A00256AF7 /* SupplementsManager.swift */,
 			);
 			path = SupplementsManager;
 			sourceTree = "<group>";
@@ -1522,6 +1525,7 @@
 				89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */,
 				895FFC0B267E241700256AF7 /* PharmaErrors.swift in Sources */,
 				892B1FA2261D2EA200329B0A /* Bundle+info.swift in Sources */,
+				89AA42ED267EFE6500EF0ACE /* SupplementAidKitTableViewCell.swift in Sources */,
 				895FFBC1267DAABA00256AF7 /* UserHealthOutput.swift in Sources */,
 				895FFBC6267DAABA00256AF7 /* AboutUsViewModel.swift in Sources */,
 				895FFBE0267DAABA00256AF7 /* ShopSearchCoordinatorProtocol.swift in Sources */,
